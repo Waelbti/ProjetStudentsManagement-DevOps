@@ -45,13 +45,13 @@ spec:
             cpu: "500m"
         livenessProbe:
           httpGet:
-            path: /student/students/getAllStudents
+            path: /student/actuator/health
             port: 8089
           initialDelaySeconds: 60
           periodSeconds: 10
         readinessProbe:
           httpGet:
-            path: /student/students/getAllStudents
+            path: /student/actuator/health
             port: 8089
           initialDelaySeconds: 30
           periodSeconds: 5

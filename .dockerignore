@@ -1,0 +1,12 @@
+.dockerignore
+!target/*.jar
+.mvn
+.git
+.idea
+build
+.settings
+*.iml
+mvnw
+mvnw.cmd
+Dockerfile
+**/node_modules
